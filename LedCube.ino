@@ -1,7 +1,53 @@
-/*
-Author: Obtron
-Use this as you please
-*/
+/************************************************************
+ * Project Name : 5×5×5 LED Cube
+ * Author       : Bhushan Patil
+ * Organization : Core Comet Industries
+ *
+ * Description:
+ *  This project is a 5×5×5 LED Cube designed to display
+ *  3D lighting patterns and animations using multiplexing.
+ *  The cube demonstrates spatial visualization, timing
+ *  control, and efficient I/O management in embedded systems.
+ *
+ * Key Features:
+ *  - 125 LEDs arranged in a 5×5×5 matrix
+ *  - Layer-by-layer multiplexing technique
+ *  - Multiple 3D animation patterns
+ *  - Adjustable animation speed
+ *  - Efficient GPIO usage
+ *  - Low-power and optimized refresh logic
+ *
+ * Hardware Used:
+ *  - Arduino Nano
+ *  - 125 LEDs (5×5×5)
+ *  - Current limiting resistors
+ *  - NPN transistors / ULN2803 (for layer control)
+ *  - External 5V power supply (recommended)
+ *
+ * Software Details:
+ *  - Arduino IDE
+ *  - Timer-based refresh logic
+ *  - Multiplexed scanning algorithm
+ *
+ * Animations Included:
+ *  - Layer sweep
+ *  - Plane shift (X, Y, Z)
+ *  - Rain / Falling effect
+ *  - Cube expand & collapse
+ *  - Random sparkle
+ *
+ * Working Principle:
+ *  Only one layer is powered at a time while column LEDs
+ *  are switched rapidly. Due to persistence of vision,
+ *  the human eye perceives a complete 3D animation.
+ *
+ * License:
+ *  Educational and personal use only.
+ *  Commercial use requires permission.
+ *
+ * Version      : 1.0
+ * Last Updated : 2026
+ ************************************************************/
 
 
 #include <SPI.h>
